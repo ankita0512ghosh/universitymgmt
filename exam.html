@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{overflow: hidden;}
+        header{position: relative;}
+        .exam{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html">
+                <img src="./images/logo.jpg" alt="">
+                <h2>IGDTUW<span class="danger">ERP</span></h2>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="exam timetable">
+            <h2>Exam Available</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Subject Name</th>
+                        <th>Subject Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Financial Management</td>
+                        <td>HMC 306</td>
+                    </tr>
+                    <tr>
+                        <td>03 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Compiler Design</td>
+                        <td>BCS 306</td>
+                    </tr>
+                    <tr>
+                        <td>06 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Microprocessors & Interfacing</td>
+                        <td>BCS 304</td>
+                    </tr>
+                    <tr>
+                        <td>10 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Cloud Computing</td>
+                        <td>BIT 304</td>
+                    </tr>
+                    <tr>
+                        <td>14 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Wireless Networks</td>
+                        <td>BCS 302</td>
+                    </tr>
+                    <tr>
+                        <td>16 May 2024</td>
+                        <td>10 AM - 1 PM</td>
+                        <td>Multimedia Technologies</td>
+                        <td>BCS 308</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    </main>
+
+</body>
+
+<script src="app.js"></script>
+</html>

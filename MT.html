@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html">
+                <img src="./images/logo.jpg" alt="">
+                <h2>IGDTUW<span class="danger">ERP</span></h2>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+
+            <a href="#">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Ankita</b> </p>
+                        <small class="text-muted">01001012021</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Computer Science & Engineering</p>
+                    <h5>DOB</h5>
+                    <p>27-June-2003</p>
+                    <h5>Contact</h5>
+                    <p>99XXXXXX70</p>
+                    <h5>Email</h5>
+                    <p>ankita010btcse21@igdtuw.ac.in</p>
+                    <h5>Address</h5>
+                    <p>IGDTUW, New Delhi.</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <h1>Multimedia Technologies</h1>
+            <h2>Subject Code: BCS 308</h2>
+            <div class="subjects">
+                <div class="mt">
+                    <span class="material-symbols-outlined">person</span>
+                    <h3>Faculty</h3>
+                    <p class = "Faculty">Ms. Bhawna Jain</p>
+                    <p>Assistant Professor</p>
+                    <img class = "FacPic" src = "images/MT Faculty.jpg" alt = "...">
+                </div>
+                <div class="mt">
+                    <span class="material-symbols-outlined">Monitoring</span>
+                    <h3>Attendance</h3>
+                    <h2>25/27</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="number"><p>92%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div id="Syll">
+                    <span class="material-symbols-outlined">Assignment</span>
+                    <p class = "Syllabus"><a href = "https://igdtuw.ac.in/syllabus/B.tech%20-%20CSE%20CBCS%20%20Syllabus.pdf" target="blank" style = "color:rgb(55, 72, 221);">Syllabus</a></p>
+                    <img src = "images/MT Syll.png" alt = "...">
+                    
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    </body>
+</html>

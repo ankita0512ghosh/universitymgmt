@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html">
+                <img src="./images/logo.jpg" alt="">
+                <h2>IGDTUW<span class="danger">ERP</span></h2>
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>Ankita</b> </p>
+                        <small class="text-muted">01001012021</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Computer Science & Engineering</p>
+                    <h5>DOB</h5>
+                    <p>27-June-2003</p>
+                    <h5>Contact</h5>
+                    <p>99XXXXXX70</p>
+                    <h5>Email</h5>
+                    <p>ankita010btcse21@igdtuw.ac.in</p>
+                    <h5>Address</h5>
+                    <p>IGDTUW, New Delhi.</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <h1>Attendance</h1>
+            <div class="subjects">
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="images/CD-removebg-preview.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Compiler Design</h3>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="CD.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/WN.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Wireless Networks</h3>
+                      <a href="WN.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/MP.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Micorprocessor & interacing</h3>
+                      <a href="MP.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/CC.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Cloud Computing</h3>
+                      <a href="CC.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/MT.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Multimedia Technologies</h3>
+                      <a href="MT.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/FM.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Financial Management</h3>
+                      <a href="FM.html" class="btn btn-primary">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="right">
+            
+
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic</b></p>
+                        <p> Choice of Electives for Odd Semester.</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p>Faculty Feedback Form</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> Global internship oportunity by Student organization.</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Examination</b> Instructions for Mid Term Examination.</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
